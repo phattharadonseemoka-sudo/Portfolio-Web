@@ -152,8 +152,13 @@
       },
       {
         "type": "image",
-        "src": "../uploads/f4d0d840-1f93-4655-842d-d0cb3378e733.png",
-        "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (15).png"
+        "src": "../uploads/e0b642b0-31b2-4209-8f43-de33144262cb.jpg",
+        "originalName": "LINE_ALBUM_à¸à¸µ 2569_261024_3.jpg"
+      },
+      {
+        "type": "image",
+        "src": "../uploads/a9596e4a-d223-4c4d-a9d2-57a899cb68c1.jpg",
+        "originalName": "LINE_ALBUM_à¸à¸µ 2569_261024_2.jpg"
       },
       {
         "type": "image",
@@ -162,12 +167,12 @@
       },
       {
         "type": "image",
-        "src": "../uploads/07036326-1761-4161-986c-37281f076968.png",
-        "originalName": "carebot.png"
+        "src": "../uploads/f4d0d840-1f93-4655-842d-d0cb3378e733.png",
+        "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (15).png"
       }
     ],
     "createdAt": "2026-10-24T15:10:37.047Z",
-    "updatedAt": "2026-10-24T15:14:18.252Z"
+    "updatedAt": "2026-10-24T15:48:41.743Z"
   },
   {
     "id": "9fb461e0-8a26-417d-91a5-af3512f2846f",
@@ -293,9 +298,220 @@
         "type": "image",
         "src": "../uploads/bb745b24-edc2-400d-a94c-1a517c8fa090.png",
         "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (45).png"
+      },
+      {
+        "type": "image",
+        "src": "../uploads/6ff775ad-269d-455a-81af-6f429f2c9196.jpg",
+        "originalName": "LINE_ALBUM_à¸à¸µ 2569_261024_1.jpg"
       }
     ],
     "createdAt": "2026-10-24T15:26:22.900Z",
-    "updatedAt": "2026-10-24T15:26:55.333Z"
+    "updatedAt": "2026-10-24T15:47:47.067Z"
+  },
+  {
+    "id": "0b691293-5d9b-4c94-8243-ff6c4863a2e3",
+    "title": "แข่งขันหุ่นยนต์ KP Robot Challenge 2025 รายการ Robo Soccer",
+    "category": "แข่งขัน",
+    "year": 2025,
+    "role": "หัวหน้าทีม",
+    "achievement": "เหรียญทอง ชนะเลิศอันดับที่ 1",
+    "description": "ได้รับ รางวัลเหรียญทอง ชนะเลิศ จากการแข่งขันหุ่นยนต์ KP Robot Challenge 2025 รายการ Robo Soccer การแข่งขันช่วยพัฒนาทักษะด้านโครงสร้างหุ่นยนต์ \r\nการเขียนโปรแกรมควบคุม และการวางกลยุทธ์ โดยนำประสบการณ์และข้อผิดพลาดจากการแข่งขันที่ผ่านมาไปปรับปรุงทั้งฮาร์ดแวร์และซอฟต์แวร์ให้ทำงานมีประสิทธิภาพยิ่งขึ้น",
+    "cover": "../uploads/c8d73413-f10c-48ab-a428-2fed9458a3e1.png",
+    "media": [
+      {
+        "type": "image",
+        "src": "../uploads/6d2eed1d-7ceb-4130-9efe-45fc14a57eaf.png",
+        "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (50).png"
+      },
+      {
+        "type": "image",
+        "src": "../uploads/544f26cc-e142-4868-81d3-b75fd4eace96.jpg",
+        "originalName": "LINE_ALBUM_à¸à¸µ 2569_261024_6-cropped.jpg"
+      },
+      {
+        "type": "image",
+        "src": "../uploads/270fd3dc-569f-4894-b1c7-eed9e887bfd9.jpg",
+        "originalName": "LINE_ALBUM_à¸à¸µ 2569_261024_4.jpg"
+      },
+      {
+        "type": "image",
+        "src": "../uploads/e58f1c15-fcf5-4adf-b4eb-004b6cccfdd9.jpg",
+        "originalName": "LINE_ALBUM_à¸à¸µ 2569_261024_5.jpg"
+      },
+      {
+        "type": "image",
+        "src": "../uploads/1a44920d-2798-4abc-954d-98a115d1a48f.png",
+        "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (47).png"
+      },
+      {
+        "type": "image",
+        "src": "../uploads/975e36be-3a73-4644-9a19-5acea0f35719.png",
+        "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (48).png"
+      },
+      {
+        "type": "image",
+        "src": "../uploads/d80c10d9-64a2-4d95-93a7-1a8486b5f8ba.png",
+        "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (49).png"
+      }
+    ],
+    "createdAt": "2026-10-24T15:29:22.953Z",
+    "updatedAt": "2026-10-24T15:43:56.321Z"
+  },
+  {
+    "id": "145d2230-bbf1-4499-99fd-85daa01ce656",
+    "title": "แข่งขันหุ่นยนต์ KP Robot Challenge 2024 รายการ Robo Soccer",
+    "category": "แข่งขัน",
+    "year": 2024,
+    "role": "หัวหน้าทีม",
+    "achievement": "เหรียญทอง ชนะเลิศอันดับที่ 1",
+    "description": "ได้รับ รางวัลเหรียญทอง ชนะเลิศ จากการแข่งขันหุ่นยนต์ KP Robot Challenge 2024 รายการ Robo Soccer ซึ่งเป็นประสบการณ์สำคัญในการเรียนรู้ว่าประสิทธิภาพของหุ่นยนต์ขึ้นอยู่กับความสัมพันธ์ระหว่างโครงสร้าง การควบคุม และกลยุทธ์ ทำให้ผมเริ่มวิเคราะห์ข้อจำกัดของระบบ\r\nและนำข้อผิดพลาดกลับไปพัฒนาในการแข่งขันปีถัดไป",
+    "cover": "../uploads/9a621631-3535-41dd-a81b-9883ed6bff2c.png",
+    "media": [
+      {
+        "type": "image",
+        "src": "../uploads/af4b7ede-9d36-4fe2-8254-40b20c7879a2.png",
+        "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (51).png"
+      },
+      {
+        "type": "image",
+        "src": "../uploads/4eafe13b-2491-4782-b794-e7df3b11e57d.png",
+        "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (52).png"
+      },
+      {
+        "type": "image",
+        "src": "../uploads/9d33fc31-5427-45e1-b07b-848ba5b0a6f5.png",
+        "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (53).png"
+      }
+    ],
+    "createdAt": "2026-10-24T15:42:51.841Z"
+  },
+  {
+    "id": "43268039-36df-46b2-8d89-d07d6aa9758a",
+    "title": "แข่งขันหุ่นยนต์ KP Robot Challenge 2023 รายการ LINE VISION",
+    "category": "แข่งขัน",
+    "year": 2023,
+    "role": "หัวหน้าทีม",
+    "achievement": "เหรียญทอง ชนะเลิศอันดับที่ 1",
+    "description": "ได้รับ รางวัลเหรียญทอง ชนะเลิศ จากการแข่งขันหุ่นยนต์ KP Robot Challenge 2023 รายการ \r\nLINE VISION ภายในงาน Symposium 12 ซึ่งเป็นช่วงสำคัญในการสร้างพื้นฐานด้านการออกแบบ\r\nหุ่นยนต์ อัลกอริทึม และการวางกลยุทธ์แก้ปัญหา",
+    "cover": "../uploads/d8dbb79d-356f-4d93-9cfe-dec356c24efa.png",
+    "media": [
+      {
+        "type": "image",
+        "src": "../uploads/261c7392-f1ab-4aed-9ace-bb5adf2a7a6e.png",
+        "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (54).png"
+      },
+      {
+        "type": "image",
+        "src": "../uploads/94c29263-d38a-4f4f-b800-2e8d56a3fca2.png",
+        "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (55).png"
+      },
+      {
+        "type": "image",
+        "src": "../uploads/8480111b-cf03-447f-b942-586709610055.png",
+        "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (56).png"
+      },
+      {
+        "type": "image",
+        "src": "../uploads/e048d408-4bc2-4da1-a2b8-093c578ed1fc.png",
+        "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (57).png"
+      }
+    ],
+    "createdAt": "2026-10-24T15:47:14.277Z"
+  },
+  {
+    "id": "69e3e2ef-7a4f-4a25-813c-45ecdd0fa186",
+    "title": "โครงการอบรมเชิงปฏิบัติการและพัฒนานวัตกรรมปัญญาประดิษฐ์ระดับประเทศ OBEC AI SPARK THAILAND",
+    "category": "แข่งขัน",
+    "year": 2026,
+    "role": "โปรแกรมเมอร์",
+    "achievement": "คัดเลือกเป็น 100 ทีมสุดท้ายระดับประเทศในโครงการ OBEC AI SPARK THAILAND",
+    "description": "ทีม “ภูไทโรบอท 1” ได้รับคัดเลือกเป็น 100 ทีมสุดท้ายระดับประเทศในโครงการ OBEC AI SPARK THAILAND และเข้ารับการอบรมเข้มข้นเพื่อพัฒนานวัตกรรม AI และ IoT ทำให้ผมต่อยอดจากการเขียนโปรแกรมควบคุมหุ่นยนต์ไปสู่การประยุกต์ AI และอุปกรณ์อัจฉริยะ พร้อมเรียนรู้การพัฒนาระบบที่มีองค์ประกอบหลายส่วนร่วมกัน",
+    "cover": "../uploads/eb20b0e2-7d09-4752-b457-816ae0808c54.png",
+    "media": [
+      {
+        "type": "image",
+        "src": "../uploads/77e4bf19-e3ff-4967-b463-cf20a52112a8.png",
+        "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (58).png"
+      },
+      {
+        "type": "image",
+        "src": "../uploads/6f48e899-ce3c-4e31-8103-0a494b1f6688.png",
+        "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (60).png"
+      },
+      {
+        "type": "image",
+        "src": "../uploads/cbc8c3a6-aecb-4f0f-b2ab-b7f79eae5982.png",
+        "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (59).png"
+      }
+    ],
+    "createdAt": "2026-10-24T15:50:16.799Z",
+    "updatedAt": "2026-10-24T15:51:44.776Z"
+  },
+  {
+    "id": "57d2e7f3-1b80-4c4e-af3d-610b0be647bb",
+    "title": "โครงการพัฒนาทักษะหุ่นยนต์อัตโนมัติ AI & IoT ระดับประเทศ",
+    "category": "แข่งขัน",
+    "year": 2026,
+    "role": "โปรแกรมเมอร์",
+    "achievement": "-",
+    "description": "เข้าร่วมการอบรมเชิงปฏิบัติการและการแข่งขันหุ่นยนต์อัตโนมัติ จัดโดยกลุ่มโรงเรียนกาญจนาภิเษกวิทยาลัยร่วมกับ ศูนย์ CEAI มหาวิทยาลัยกาฬสินธุ์ โดยได้เรียนรู้ ROS การประกอบหุ่นยนต์ และการเขียนโปรแกรมผ่าน IoT และ AI เพื่อแก้โจทย์ภารกิจจริง ทำให้เข้าใจการทำงานร่วมกันระหว่าง Hardware และ Software ในระบบหุ่นยนต์ที่ซับซ้อนขึ้น",
+    "cover": "../uploads/22ac435d-7ad6-447c-b729-45036c58e78f.png",
+    "media": [
+      {
+        "type": "image",
+        "src": "../uploads/9d8fb5e0-1902-4ed1-b051-a4c3db9fcfd5.png",
+        "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (61).png"
+      },
+      {
+        "type": "image",
+        "src": "../uploads/50167c58-92f9-46b3-8c68-0573adf16258.png",
+        "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (62).png"
+      },
+      {
+        "type": "image",
+        "src": "../uploads/7770a4db-3085-475c-ae79-b36c18c47bcd.png",
+        "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (63).png"
+      },
+      {
+        "type": "image",
+        "src": "../uploads/5a1c6b03-02b0-4ce3-9610-9476d5d4e73f.png",
+        "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (64).png"
+      },
+      {
+        "type": "image",
+        "src": "../uploads/be0b781d-82ba-4cec-918f-8199242f3301.png",
+        "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (65).png"
+      }
+    ],
+    "createdAt": "2026-10-24T15:53:54.560Z"
+  },
+  {
+    "id": "b917a93d-c1bd-44ec-a85e-352424102afd",
+    "title": "วิทยากรและผู้ถ่ายทอดความรู้ด้านเทคโนโลยีเบื้องต้น",
+    "category": "กิจกรรม",
+    "year": 2024,
+    "role": "วิทยากร",
+    "achievement": "-",
+    "description": "ปฏิบัติหน้าที่วิทยากรถ่ายทอดพื้นฐานการเขียนโปรแกรมด้วย micro:bit ให้แก่นักเรียน\r\nโรงเรียนนางามวิทยา การสอนทำให้ผมต้องเปลี่ยน Logic และแนวคิดทางโปรแกรมให้เป็นขั้นตอน\r\nที่ผู้เริ่มต้นเข้าใจได้ง่าย ซึ่งช่วยพัฒนาทั้งความเข้าใจด้าน Programming และการสื่อสารข้อมูลทางเทคนิค",
+    "cover": "../uploads/f08278fc-3921-4720-86af-32fe84cfec0e.png",
+    "media": [
+      {
+        "type": "image",
+        "src": "../uploads/077f4847-e8ee-42a8-b279-2c3a179770cf.png",
+        "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (67).png"
+      },
+      {
+        "type": "image",
+        "src": "../uploads/a7c7fc48-f175-4396-aa6c-d7b9bd0227ad.png",
+        "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (66).png"
+      },
+      {
+        "type": "image",
+        "src": "../uploads/20ae69ae-09c3-4525-807c-d38feb19050d.png",
+        "originalName": "à¸£à¸¹à¸à¸ à¸²à¸à¸à¸¥à¸à¸²à¸ (68).png"
+      }
+    ],
+    "createdAt": "2026-10-24T15:55:30.484Z",
+    "updatedAt": "2026-10-24T15:55:36.693Z"
   }
 ]
