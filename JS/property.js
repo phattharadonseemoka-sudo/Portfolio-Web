@@ -475,9 +475,13 @@ async function loadAdminProjects() {
             : "../data/projects.json";
 
         // โหลดข้อมูลกิจกรรม
-        const response = await fetch(dataURL, {
+        
+        const freshURL = `${dataURL}?v=${Date.now()}`;
+
+        const response = await fetch(freshURL, {
             cache: "no-store"
         });
+
 
         if (!response.ok) {
             throw new Error("ไม่สามารถโหลดข้อมูลกิจกรรมได้");
