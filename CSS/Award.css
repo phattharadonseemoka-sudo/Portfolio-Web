@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Noto+Sans+Thai:wght@100..900&family=Share+Tech&display=swap');
+
+/* ===== GLOBAL ===== */
+
+html {
+    overflow-y: scroll;
+    scrollbar-gutter: stable;
+}
+
+body {
+    margin: 0;
+    font-family: "Noto Sans Thai", sans-serif;
+    background: white;
+    color: rgb(30, 29, 29);
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ===== NAVIGATION ===== */
+
+.menu-bar {
+    position: relative;
+    flex-shrink: 0;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(30, 29, 29);
+}
+
+.menu-bar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+}
+
+.menu-bar:hover {
+    text-shadow: 0 0 0.5px rgb(30, 29, 29);
+}
+
+.menu-bar:hover::after,
+.active-menu::after {
+    background-color: rgb(30, 29, 29);
+}
+
+.top-bar {
+    min-height: 46px;
+    padding: 10px 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 24px;
+}
+
+@media (max-width: 800px) {
+    .top-bar {
+        padding: 12px 15px;
+        justify-content: flex-start;
+        gap: 25px;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .top-bar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .menu-bar {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+}
+
+/* ===== DIVIDER ===== */
+
+.line {
+    width: 100%;
+    height: 2px;
+    margin: 15px 0 20px;
+    background-color: rgba(40, 45, 47, 0.174);
+    box-shadow: 0 3px 5px rgba(23, 26, 27, 0.174);
+}
+
+/* ===== COMPETITION SECTION ===== */
+
+.competition-Title {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* ===== COMPETITION TEXT ===== */
+
+.text-title {
+    flex: 1;
+    min-width: 0;
+    line-height: 1.6;
+}
+
+.text-title h1 {
+    font-size: clamp(36px, 5vw, 70px);
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 0 0 15px;
+}
+
+.text-title h2 {
+    font-size: clamp(24px, 3vw, 36px);
+    line-height: 1.3;
+    margin: 0 0 20px;
+}
+
+.text-title h2 span {
+    color: rgb(255, 68, 0);
+}
+
+.text-title p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* ===== COMPETITION IMAGE ===== */
+
+.picture {
+    flex: 1;
+    width: 50%;
+    min-width: 0;
+    height: clamp(250px, 30vw, 420px);
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.6;
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 40%,
+        black 50%
+    );
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 40%,
+        black 50%
+    );
+}
+
+/* ===== FILTER SECTION ===== */
+
+.filter-section {
+    padding-left: 100px;
+}
+
+.filter-section h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+/* ===== CATEGORY FILTER ===== */
+
+.filter-category {
+    display: flex;
+    margin-top: 5px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filter-category button {
+    padding: 5px 25px;
+    border: 1px solid rgb(20, 20, 59);
+    border-radius: 20px;
+    background-color: white;
+    color: rgb(20, 20, 59);
+    font-family: "Noto Sans Thai", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.filter-category button.active {
+    color: white;
+    background-color: rgb(20, 20, 59);
+}
+
+.filter-category button.active:hover {
+    color: white;
+    background-color: rgb(20, 20, 59);
+}
+
+.filter-category button:not(.active):hover {
+    color: rgb(20, 20, 59);
+    background-color: #dfdfe1;
+}
+
+/* ===== AWARD GALLERY ===== */
+
+.Award-gallery {
+    width: calc(100% - 100px);
+    max-width: 1400px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/* ===== PHOTO CARD ===== */
+
+.photo-card {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    background: white;
+    border: 1px solid #eee;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    overflow: hidden;
+    font-family: inherit;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    cursor: pointer;
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+/* ซ่อนการ์ดเมื่อไม่ตรงประเภท */
+
+.photo-card[hidden] {
+    display: none;
+}
+
+.photo-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* สำหรับการใช้งานด้วย Keyboard */
+
+.photo-card:focus-visible {
+    outline: 3px solid rgb(255, 68, 0);
+    outline-offset: 3px;
+}
+
+/* ===== PROJECT IMAGE ===== */
+
+.project-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+/* ===== PROJECT INFORMATION ===== */
+
+.info {
+    padding: 20px;
+}
+
+.year {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(20, 20, 59);
+}
+
+.info h3 {
+    color: rgb(26, 26, 34);
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.info p {
+    font-size: 16px;
+    color: #272727;
+    line-height: 1.7;
+}
+
+/* ===================================
+   PROJECT POPUP
+=================================== */
+
+.project-popup {
+    width: min(700px, calc(100% - 40px));
+    max-width: 700px;
+    max-height: 85vh;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    color: rgb(30, 29, 29);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.25);
+    overflow-y: auto;
+    font-family: "Noto Sans Thai", sans-serif;
+}
+
+/* พื้นหลังด้านหลัง Popup */
+
+.project-popup::backdrop {
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+/* ===== POPUP CLOSE BUTTON ===== */
+
+.popup-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f1f1;
+    color: #333;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.popup-close:hover {
+    background: #dddddd;
+}
+
+/* ===== POPUP HEADER ===== */
+
+.popup-header {
+    padding-right: 40px;
+    margin-bottom: 20px;
+}
+
+.popup-header span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(255, 68, 0);
+}
+
+.popup-header h2 {
+    margin: 0;
+    font-size: clamp(24px, 4vw, 34px);
+    font-weight: 800;
+    line-height: 1.3;
+    color: rgb(20, 20, 59);
+}
+
+/* ===== POPUP IMAGE ===== */
+
+.popup-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+/* ===== POPUP INFO ===== */
+
+.popup-info {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.popup-role,
+.popup-award {
+    padding: 20px;
+    background: #f7f7f8;
+    border-radius: 12px;
+}
+
+.popup-role h3,
+.popup-award h3 {
+    margin: 0 0 10px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: rgb(255, 68, 0);
+}
+
+.popup-role p,
+.popup-award p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* ===== POPUP DESCRIPTION ===== */
+
+.popup-description {
+    margin-top: 25px;
+}
+
+.popup-description h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: rgb(20, 20, 59);
+}
+
+.popup-description p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.9;
+    color: #555;
+}
+
+/* ===== POPUP MEDIA GALLERY ===== */
+
+.popup-media {
+    width: 100%;
+
+    /* กว้างเต็มพื้นที่ภายใน Popup */
+
+    margin-top: 20px;
+}
+
+/* ===== MEDIA SLIDES ===== */
+
+.media-slide {
+    width: 100%;
+}
+
+/* ซ่อนรูปหรือวิดีโอที่ไม่ได้เลือก */
+
+.media-slide[hidden] {
+    display: none;
+}
+
+/* ===== IMAGE & VIDEO ===== */
+
+.popup-image,
+.popup-video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+
+    /* แสดงภาพเต็ม ไม่ตัดขอบ */
+
+    background-color: #101018;
+    border-radius: 14px;
+}
+
+/* ===== MEDIA CONTROLS ===== */
+
+.media-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+/* ปุ่มเลื่อนซ้ายและขวา */
+
+.media-prev,
+.media-next {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f3;
+    color: rgb(20, 20, 59);
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* เปลี่ยนสีเมื่อเมาส์วาง */
+
+.media-prev:hover,
+.media-next:hover {
+    background-color: rgb(20, 20, 59);
+    color: white;
+}
+
+/* ตัวนับจำนวนสื่อ */
+
+.media-counter {
+    font-size: 14px;
+    font-weight: 600;
+    color: #777;
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+/* ===== TABLET 1000px ===== */
+
+@media (max-width: 1000px) {
+    .competition-Title {
+        padding: 0 15px;
+        gap: 15px;
+    }
+
+    .picture {
+        height: 300px;
+    }
+}
+
+/* ===== TABLET 900px ===== */
+
+@media (max-width: 900px) {
+    .Award-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .filter-section {
+        padding: 0 30px;
+    }
+}
+
+/* ===== MOBILE 700px ===== */
+
+@media (max-width: 700px) {
+    .competition-Title {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 25px 20px;
+        gap: 20px;
+    }
+
+    .text-title {
+        width: 100%;
+    }
+
+    .text-title h1 {
+        font-size: 40px;
+    }
+
+    .text-title h2 {
+        font-size: 26px;
+    }
+
+    .text-title p {
+        font-size: 14px;
+    }
+
+    .picture {
+        width: 100%;
+        height: 240px;
+        flex: none;
+        -webkit-mask-image: linear-gradient(
+            to bottom,
+            transparent 0%,
+            black 35%,
+            black 100%
+        );
+        mask-image: linear-gradient(
+            to bottom,
+            transparent 0%,
+            black 35%,
+            black 100%
+        );
+    }
+}
+
+/* ===== MOBILE 600px ===== */
+
+@media (max-width: 600px) {
+    .Award-gallery {
+        width: calc(100% - 40px);
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .filter-section {
+        padding: 0 20px;
+    }
+
+    .filter-section h2 {
+        font-size: 24px;
+    }
+
+    .filter-category {
+        gap: 10px;
+    }
+
+    .filter-category button {
+        padding: 5px 15px;
+        font-size: 13px;
+    }
+
+    /* Popup */
+
+    .project-popup {
+        width: calc(100% - 24px);
+        max-height: 90vh;
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .popup-header {
+        padding-right: 35px;
+    }
+
+    .popup-header span {
+        font-size: 10px;
+    }
+
+    .popup-info {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .popup-role,
+    .popup-award {
+        padding: 15px;
+    }
+
+    .popup-description p {
+        font-size: 14px;
+    }
+}
+
+/* ===== REDUCED MOTION ===== */
+
+@media (prefers-reduced-motion: reduce) {
+    .photo-card,
+    .popup-close {
+        transition: none;
+    }
+
+    .photo-card:hover {
+        transform: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .popup-media {
+        margin-top: 15px;
+    }
+
+    .popup-image,
+    .popup-video {
+        border-radius: 10px;
+    }
+
+    .media-prev,
+    .media-next {
+        width: 36px;
+        height: 36px;
+    }
+}

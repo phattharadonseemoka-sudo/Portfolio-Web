@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio | Award - Phattharadon Seemoka</title>
+
+    <link rel="stylesheet" href="../CSS/Award.css">
+    <link rel="icon" type="image/png" href="../Image/LogoWebpage.png">
+    <script src="../JS/property.js" defer></script>
+</head>
+
+<body>
+
+    <nav class="top-bar" aria-label="เมนูหลัก">
+        <a href="Home.html" class="menu-bar">หน้าหลัก</a>
+        <a
+            href="https://shopee.co.th/shop/1546466770"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="menu-bar"
+        >
+            ร้าน
+        </a>
+        <a href="Award.html" class="menu-bar active-menu">
+            ผลงาน
+        </a>
+        <a
+            href="https://www.youtube.com/@BiNET-e7s"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="menu-bar"
+        >
+            YouTube
+        </a>
+        <a
+            href="https://www.facebook.com/share/1YSYnYvE7o/?mibextid=wwXIfr"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="menu-bar"
+        >
+            แฟนเพจ
+        </a>
+        <a href="About-me.html" class="menu-bar">
+            เกี่ยวกับฉัน
+        </a>
+    </nav>
+
+    <div class="line"></div>
+
+    <section class="competition-Title">
+        <div class="text-title">
+            <h1>แข่งขัน</h1>
+            <h2>
+                Competition
+                <span>Archive</span>
+            </h2>
+            <!-- แก้ไขข้อความแนะนำหน้า Portfolio -->
+            <p>
+                รวบรวมการแข่งขัน กิจกรรม และรางวัลต่าง ๆ ที่ได้เข้าร่วม
+                ตลอดเส้นทางการเรียนรู้ด้านหุ่นยนต์ เพื่อพัฒนาทักษะ
+                ประสบการณ์ และการต่อยอดสู่อนาคต
+            </p>
+        </div>
+        <!-- เปลี่ยนรูปภาพหลักของหน้า Award -->
+        <img
+            src="../Image/Background.png"
+            class="picture"
+            alt="ภาพประกอบการแข่งขันหุ่นยนต์"
+        >
+    </section>
+
+    <section class="filter-section">
+        <h2>Explore My Works</h2>
+
+        <div class="filter-category">
+            <button type="button" class="active">
+                ทุกประเภท
+            </button>
+            <button type="button">
+                แข่งขัน
+            </button>
+            <button type="button">
+                กิจกรรม
+            </button>
+            <button type="button">
+                เผยแพร่
+            </button>
+            <button type="button">
+                บทความ
+            </button>
+        </div>
+    </section>
+    <section class="Award-gallery">
+    </section>
+
+    <dialog
+        class="project-popup"
+        id="projectPopup"
+        aria-labelledby="popupTitle"
+    >
+
+        <button
+            type="button"
+            class="popup-close"
+            aria-label="ปิดรายละเอียดผลงาน"
+        >
+            &times;
+        </button>
+
+        <div class="popup-header">
+            <!-- เปลี่ยนประเภทกิจกรรมและปี -->
+            <span id="popupCategory">
+                ROBOTICS COMPETITION · 2024
+            </span>
+
+            <!-- เปลี่ยนชื่อกิจกรรมใน Popup -->
+            <h2 id="popupTitle">
+                TPA Robo Rescue
+            </h2>
+        </div>
+
+        <div class="popup-media">
+            <div class="media-slide">
+                <!-- เปลี่ยนรูปภาพ Popup รูปที่ 1 -->
+                <img
+                    src="../Image/TPArobot2024.png"
+                    alt="ภาพการแข่งขัน TPA Robo Rescue"
+                    class="popup-image"
+                >
+            </div>
+            <div class="media-slide" hidden>
+                <!-- เปลี่ยนรูปภาพ Popup รูปที่ 2 -->
+                <img
+                    src="../Image/TPArobot2024.png"
+                    alt="ภาพหุ่นยนต์ในการแข่งขัน"
+                    class="popup-image"
+                >
+            </div>
+            <div class="media-slide" hidden>
+                <video
+                    class="popup-video"
+                    preload="none"
+                    playsinline
+                >
+                    <!-- เปลี่ยนไฟล์วิดีโอของกิจกรรม -->
+                    <source
+                        src="../Video/TPA2024clip.mp4"
+                        type="video/mp4"
+                    >
+                    เบราว์เซอร์ไม่รองรับการเล่นวิดีโอ
+                </video>
+            </div>
+            <div class="media-controls">
+                <button
+                    type="button"
+                    class="media-prev"
+                    aria-label="สื่อก่อนหน้า"
+                >
+                    &#10094;
+                </button>
+                <span
+                    class="media-counter"
+                    aria-live="polite"
+                >
+                    1 / 3
+                </span>
+                <button
+                    type="button"
+                    class="media-next"
+                    aria-label="สื่อถัดไป"
+                >
+                    &#10095;
+                </button>
+            </div>
+        </div>
+
+        <div class="popup-info">
+            <div class="popup-role">
+                <h3>MY ROLE</h3>
+                <!-- เปลี่ยนตำแหน่งและหน้าที่ที่รับผิดชอบ -->
+                <p>
+                    รายละเอียดตำแหน่งและหน้าที่
+                </p>
+            </div>
+            <div class="popup-award">
+                <h3>ACHIEVEMENT</h3>
+                <!-- เปลี่ยนรางวัลหรือผลการแข่งขันที่ได้รับ -->
+                <p>
+                    รายละเอียดรางวัลหรือผลการแข่งขัน
+                </p>
+            </div>
+        </div>
+
+        <div class="popup-description">
+            <h3>รายละเอียดการแข่งขัน</h3>
+            <!-- เปลี่ยนรายละเอียด ประสบการณ์ และสิ่งที่ได้เรียนรู้ -->
+            <p>
+                อธิบายประสบการณ์ในการแข่งขัน
+                การออกแบบและพัฒนาหุ่นยนต์
+                ปัญหาที่พบ วิธีการแก้ไข
+                และสิ่งที่ได้เรียนรู้จากกิจกรรม
+            </p>
+        </div>
+    </dialog>
+
+</body>
+</html>

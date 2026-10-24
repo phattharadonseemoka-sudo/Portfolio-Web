@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Noto+Sans+Thai:wght@100..900&family=Share+Tech&display=swap');
+
+html {
+    width: 100%;
+
+    /* ใช้ความกว้างพื้นที่หน้าเว็บ */
+
+    scrollbar-gutter: auto;
+
+    /* ไม่จองพื้นที่ Scrollbar ล่วงหน้า */
+}
+
+body {
+    margin: 0;
+
+    /* ลบ Margin เริ่มต้น */
+
+    padding: 0;
+
+    /* ลบ Padding */
+
+    width: 100%;
+
+    /* ให้ Body กว้างเต็มพื้นที่ */
+
+    min-height: 100vh;
+
+    /* ความสูงอย่างน้อยเท่าหน้าจอ */
+
+    font-family: "Noto Sans Thai", sans-serif;
+    background: white;
+    color: rgb(30, 29, 29);
+}
+
+* {
+    box-sizing: border-box;
+
+    /* รวม Padding และ Border ในขนาดที่กำหนด */
+}
+
+.top-bar {
+    min-height: 46px;
+    padding: 10px 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 24px;
+}
+
+.menu-bar {
+    position: relative;
+    flex-shrink: 0;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(30, 29, 29);
+}
+
+.menu-bar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+}
+
+.menu-bar:hover {
+    text-shadow: 0 0 0.5px rgb(30, 29, 29);
+}
+
+.menu-bar:hover::after,
+.active-menu::after {
+    background-color: rgb(30, 29, 29);
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    margin: 15px 0 20px;
+    background-color: rgba(40, 45, 47, 0.174);
+    box-shadow: 0 3px 5px rgba(23, 26, 27, 0.174);
+}
+
+.scopeTitle {
+    width: 100%;
+    max-width: 1500px;
+    min-height: 140px;
+    margin: 0 auto 30px;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.textDescription {
+    max-width: 500px;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(30, 29, 29);
+}
+
+.textTitle {
+    position: relative;
+    width: 600px;
+    height: 60px;
+    margin: 0;
+    flex-shrink: 0;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(30, 29, 29);
+}
+
+.textTitle span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    white-space: nowrap;
+    opacity: 0;
+    animation: changeText 6s infinite;
+}
+
+.textTitle .text2 {
+    animation-delay: 3s;
+}
+
+@keyframes changeText {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    15%, 40% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    50%, 100% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+}
+
+.clipAward {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.awardVideo {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(40, 45, 47, 0.4);
+}
+
+.photoCarousel {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.moveSlide {
+    width: max-content;
+    display: flex;
+    gap: 20px;
+    animation: photoScroll 30s linear infinite;
+}
+
+.moveSlide img {
+    width: clamp(260px, 24vw, 350px);
+    aspect-ratio: 350 / 220;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(40, 45, 47, 0.35);
+}
+
+@keyframes photoScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-50% - 10px));
+    }
+}
+
+@media (max-width: 1000px) {
+    .scopeTitle {
+        min-height: 120px;
+        padding: 40px 20px;
+        margin-bottom: 0;
+        justify-content: center;
+    }
+
+    .textDescription {
+        display: none;
+    }
+
+    .textTitle {
+        width: 100%;
+        max-width: 600px;
+        height: 55px;
+        flex-shrink: 1;
+        font-size: clamp(22px, 5vw, 36px);
+    }
+}
+
+@media (max-width: 800px) {
+    .top-bar {
+        padding: 12px 15px;
+        justify-content: flex-start;
+        gap: 25px;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .top-bar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .menu-bar {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .clipAward {
+        padding-inline: 20px;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .scopeTitle {
+        padding-inline: 16px;
+    }
+
+    .textTitle {
+        font-size: clamp(21px, 7vw, 30px);
+    }
+
+    .moveSlide {
+        gap: 14px;
+    }
+
+    .moveSlide img {
+        width: 260px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .textTitle span,
+    .moveSlide {
+        animation: none;
+    }
+
+    .textTitle span:first-child {
+        opacity: 1;
+        transform: none;
+    }
+
+    .textTitle .text2 {
+        display: none;
+    }
+}
