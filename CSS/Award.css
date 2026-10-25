@@ -699,9 +699,13 @@ body {
 
     background: #fff;
     color: #14143b;
+    font-weight: bold;
+
+    display: flex;
+    text-align: center;
 
     font-family: "Noto Sans Thai", sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     cursor: pointer;
 
     transition: border-color 0.2s ease;
